@@ -1,0 +1,74 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.parent {
+    height: 100vh;
+    border: 20px solid rgb(0,0,0);
+    /* 'flex will put all elements inside parent horizontally */
+    display: flex;
+    /* default row-direction is row */
+    /* flex-direction: column; */
+    /* justify-content: space-evenly;
+    align-items: center; */
+    
+    /* Rememeber: justify content and align items are for each axises
+    in flexbox and grid */
+
+    /* flex wrap will let elements to adjust their
+    position if there is not enough space in the screen */
+    flex-wrap: wrap;
+    align-content: flex-start;
+
+    /* align-items: baseline will align texts according 
+    to the baseline */
+    /* align-items: baseline; */
+    
+    /* flex-flow: colum wrap; */
+}
+
+.child1 {
+    width: 200px;
+    height: 200px;
+    background: rgb(39, 61, 134);
+    /* bigger the number the element will be placed at
+    the end */
+    /* order: 1; */
+
+    /* flex-grow: 1; */
+    
+    /* flex-shrink: 1; */
+
+    /* flex-basis: 200px; */
+
+    /* flex: 1 1 300px; */
+
+    
+}
+
+.child2 {
+    width: 200px;
+    height: 200px;
+    background: rgb(172, 57, 53);
+    order: 1;
+    /* flex-grow: 1; */
+    /* flex: 1 1 300px; */
+    align-self: center;
+}
+
+.child3 {
+    width: 200px;
+    height: 200px;
+    background: rgb(149, 43, 140);
+    /* flex: 1 1 300px; */
+    align-self: flex-end;
+}
+
+.child4 {
+    width: 200px;
+    height: 200px;
+    background: rgb(43, 149, 66);
+    /* flex: 1 1 300px; */
+}
